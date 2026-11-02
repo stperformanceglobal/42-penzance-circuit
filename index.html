@@ -288,6 +288,27 @@ h1.hero-address{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,6vw,
 .srow4 .sc-lbl{min-height:2.6em}
 @media(max-width:1000px){.srow4{grid-template-columns:1fr 1fr}}
 @media(min-width:1001px){.srow4 .sc-lbl{min-height:0}}
+
+@media(max-width:700px){
+  .ctw{overflow-x:visible}
+  .ctab thead{display:none}
+  .ctab,.ctab tbody,.ctab tr,.ctab td{display:block;width:100%}
+  .ctab tr{padding:15px 16px;border-bottom:1px solid var(--border)}
+  .ctab tr:last-child{border-bottom:none}
+  .ctab td{padding:0;border-bottom:none}
+  .ctab tr.live{border-bottom-color:rgba(255,255,255,0.08)}
+  .ctab td:nth-child(1){margin-bottom:10px}
+  .ctab td:nth-child(2),.ctab td:nth-child(3),.ctab td:nth-child(4){
+    display:inline-block;width:auto;vertical-align:baseline}
+  .ctab td:nth-child(2){margin-right:14px}
+  .ctab td:nth-child(3){margin-right:14px}
+  .ca{font-size:15px;line-height:1.35}
+  .cs{font-size:12.5px;line-height:1.5;margin-top:5px}
+  .cp{font-size:18px}
+  .cd{font-size:12px}
+  .tag{margin-left:0;margin-top:6px;display:inline-block}
+  .ctab td:nth-child(1) .ca .tag{margin-left:8px;margin-top:0}
+}
 </style>
 </head>
 <body>
