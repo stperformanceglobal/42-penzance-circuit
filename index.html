@@ -271,6 +271,18 @@ h1.hero-address{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,6vw,
   font-size:14px;line-height:1.65;color:var(--ink2);border-radius:0 4px 4px 0}
 .cmp-note strong{color:var(--ink);font-weight:600}
 @media(max-width:640px){.cmp-note{font-size:13.5px;padding:14px 15px}}
+
+.pband{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+.pb{border:1px solid var(--border);padding:22px 20px;text-align:center;background:#fff}
+.pb-rec{border:2px solid var(--cu);background:var(--cu-s)}
+.pb-lbl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);font-weight:600}
+.pb-rec .pb-lbl{color:#a06c38}
+.pb-val{font-family:'Cormorant Garamond',serif;font-size:clamp(24px,3vw,32px);font-weight:500;line-height:1.05;margin:10px 0 12px}
+.pb-rec .pb-val{color:#a06c38}
+.pb-note{font-size:13px;line-height:1.6;color:var(--ink2)}
+.pb-tag{display:inline-block;margin-top:14px;font-size:10px;font-weight:600;letter-spacing:.12em;
+  text-transform:uppercase;color:#fff;background:var(--cu);padding:5px 12px}
+@media(max-width:860px){.pband{grid-template-columns:1fr;gap:14px}.pb{padding:18px 16px}}
 </style>
 </head>
 <body>
@@ -673,18 +685,23 @@ h1.hero-address{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,6vw,
       </section>
 
       <section class="ps ps-white">
+        <div class="eyebrow">Price position</div>
+        <h2 class="display">The band<br><em>and the evidence behind it</em></h2>
+        <p class="body">There is no agent here to manage a guide upward or to keep the comparables to themselves. This is the same set we used to arrive at the number.</p>
+        <div class="pband">
+          <div class="pb"><div class="pb-lbl">Low</div><div class="pb-val">$1.25M</div><div class="pb-note">Set by the three bedroom version in this development, which settled at $1,240,000 in September 2026. This home adds a bedroom, a bathroom and a third floor.</div></div>
+          <div class="pb pb-rec"><div class="pb-lbl">Expected</div><div class="pb-val">$1.30M to $1.35M</div><div class="pb-note">Two four bedroom townhouses nearby made $1,300,000 and $1,350,000 this year. Both are newer builds on a single garage with slightly less living area.</div><div class="pb-tag">High confidence</div></div>
+          <div class="pb"><div class="pb-lbl">High</div><div class="pb-val">$1.45M</div><div class="pb-note">Roughly what an equivalent home asks through an agent, where commission and marketing come out of the price before it reaches the seller.</div></div>
+        </div>
+      </section>
+
+      <section class="ps ps-white" style="padding-top:0">
         <div class="eyebrow">Comparable sales</div>
         <h2 class="display">Recent transactions, Penzance Circuit and surrounds</h2>
         <div class="ctw">
           <table class="ctab">
             <thead><tr><th>Property</th><th>Config</th><th>Price</th><th>Date</th></tr></thead>
             <tbody>
-              <tr>
-                <td><div class="ca">38 Penzance Circuit <span class="tag t-same">Listed now</span></div><div class="cs">4b/3ba/2g, 222.53m&#178; total area, Hive Residential. Listed 29 October 2026. The directly comparable home on this street.</div></td>
-                <td style="font-size:12px;color:var(--ink3)">4b/3ba/2g</td>
-                <td><div class="cp">From $1,250,000</div></td>
-                <td><div class="cd">Current</div></td>
-              </tr>
             <tr class="live">
                 <td><div class="ca">56 Penzance Circuit <span class="tag t-live">Settled</span></div><div class="cs">The three bedroom and two bathroom version of this home, with a private courtyard in place of the ground floor bedroom and bathroom. Hive Residential. Sold in under 1 week.</div></td>
                 <td style="color:rgba(255,255,255,0.4);font-size:12px">3b/2ba/2g</td>
@@ -728,6 +745,12 @@ h1.hero-address{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,6vw,
                 <td><div class="cd">Nov 2024</div></td>
               </tr>
               <tr>
+                <td><div class="ca">38 Penzance Circuit <span class="tag t-same">Listed now</span></div><div class="cs">The same floorplan on this street, currently for sale through an agent. A live signal on where the floor sits.</div></td>
+                <td style="font-size:12px;color:var(--ink3)">4b/3ba/2g</td>
+                <td><div class="cp">From $1,250,000</div></td>
+                <td><div class="cd">Current</div></td>
+              </tr>
+              <tr>
                 <td><div class="ca">63 Penzance Circuit <span class="tag t-same">Same street</span></div><div class="cs">3b/3ba/2g, Hive Residential</div></td>
                 <td style="font-size:12px;color:var(--ink3)">3b/3ba/2g</td>
                 <td><div class="cp">$1,010,000</div></td>
@@ -738,8 +761,8 @@ h1.hero-address{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,6vw,
         </div>
         <div class="cmp-note"><strong>Reading the configurations.</strong> Most homes on Penzance Circuit are the three bedroom and two bathroom version, which runs over two floors with a private courtyard where this home has its ground floor bedroom and bathroom. 42 Penzance is the four bedroom and three bathroom version over three floors, at 222.53m&#178; total area and 169.25m&#178; of living space. Where a three bedroom sale is quoted above, that is the smaller version of this home rather than a like for like comparison.<br><br><strong>The closest four bedroom benchmark.</strong> Glendalough Green on Harborne Street is the nearest development of comparable homes. Two four bedroom and three bathroom townhouses there made $1,350,000 in April and $1,300,000 in August 2026. Both have a single garage, both are strata titled and both have a smaller living area. 42 Penzance is green title with a double garage and internal access.</div>
         <div class="pq">
-          <div class="pq-text">38 Penzance Circuit is the same floorplan on the same street, 222.53m&#178; on a 108m&#178; lot, listed from $1,250,000 through an agent. 42 Penzance matches it on every measure and adds roller shutters and solid security screen doors, offered directly by the owner with no commission on either side.</div>
-          <div class="pq-src">38 Penzance Circuit listing, Hive Residential, October 2026. 50 Penzance (196m&#178; total) sold $1,175,000 in May 2025 after 154 days.</div>
+          <div class="pq-text">The closest four bedroom sales in this pocket are the two Glendalough Green townhouses at $1,350,000 and $1,300,000. 42 Penzance matches them on bedrooms and bathrooms on a green title lot, with a double garage and internal access, roller shutters and solid security screen doors, offered directly by the owner with no commission on either side.</div>
+          <div class="pq-src">Glendalough Green sales, 2026. 50 Penzance (196m&#178; total) sold $1,175,000 in May 2025 after 154 days. 38 Penzance Circuit listing, Hive Residential, October 2026.</div>
         </div>
       </section>
     </div>
