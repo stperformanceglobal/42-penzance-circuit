@@ -283,6 +283,11 @@ h1.hero-address{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,6vw,
 .pb-tag{display:inline-block;margin-top:14px;font-size:10px;font-weight:600;letter-spacing:.12em;
   text-transform:uppercase;color:#fff;background:var(--cu);padding:5px 12px}
 @media(max-width:860px){.pband{grid-template-columns:1fr;gap:14px}.pb{padding:18px 16px}}
+
+.srow4{grid-template-columns:repeat(4,1fr)}
+.srow4 .sc-lbl{min-height:2.6em}
+@media(max-width:1000px){.srow4{grid-template-columns:1fr 1fr}}
+@media(min-width:1001px){.srow4 .sc-lbl{min-height:0}}
 </style>
 </head>
 <body>
@@ -385,9 +390,10 @@ h1.hero-address{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,6vw,
         <div class="eyebrow">The opportunity</div>
         <h2 class="display">The 4-bedroom Glendalough home<br><em>the market keeps running out of</em></h2>
         <p class="lead">Four bedrooms, three bathrooms and three floors on a green title lot, directly opposite Fig Tree Park. 222.53m&#178; of total area with 169.25m&#178; of living space, a double garage with internal access and no strata. Most homes in this development are the three bedroom version. This is the four bedroom version with a third bathroom.</p>
-        <div class="srow">
-          <div class="sc cu"><div class="sc-lbl">3-bedroom version, settled</div><div class="sc-val">$1,240,000</div><div class="sc-note">56 Penzance, September 2026, under 1 week</div></div>
-          <div class="sc"><div class="sc-lbl">4-bed suburb median</div><div class="sc-val">$1,200,000</div><div class="sc-note">REIWA suburb breakdown</div></div>
+        <div class="srow srow4">
+          <div class="sc"><div class="sc-lbl">3-bedroom version, settled</div><div class="sc-val">$1,240,000</div><div class="sc-note">56 Penzance, September 2026, under 1 week</div></div>
+          <div class="sc cu"><div class="sc-lbl">4-bedroom nearby, sold</div><div class="sc-val">$1,300,000</div><div class="sc-note">16/315 Harborne Street, August 2026. Single garage.</div></div>
+          <div class="sc cu"><div class="sc-lbl">4-bedroom nearby, sold</div><div class="sc-val">$1,350,000</div><div class="sc-note">46/315 Harborne Street, April 2026. Single garage.</div></div>
           <div class="sc"><div class="sc-lbl">Suburb annual growth</div><div class="sc-val">26.4%</div><div class="sc-note">REIWA, year to Oct 2026</div></div>
         </div>
       </section>
